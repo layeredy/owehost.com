@@ -1,0 +1,120 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --accent-color: #6434d1;
+  --hero-bg-color: #1e283e;
+  --hero-text-color: #ffffff;
+  --card-bg-color: #f8f9fa;
+  --footer-bg-color: #111828;
+  --footer-text-color: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #111828;
+  --text-color: #ffffff;
+  --accent-color: #6434d1;
+  --card-bg-color: #192239;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  background-color: var(--hero-bg-color);
+  color: var(--hero-text-color);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  padding: 80px 0;
+}
+
+.timeline h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: var(--text-color);
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.timeline-icon {
+  font-size: 40px;
+  color: var(--accent-color);
+  margin-right: 20px;
+}
+
+.timeline-content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.layeredy-info {
+  padding: 80px 0;
+  background-color: var(--card-bg-color);
+}
+
+.layeredy-info h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 20px 0;
+  color: var(--footer-text-color);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-icon {
+    margin-bottom: 10px;
+  }
+}
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #4a27a8; 
+}
