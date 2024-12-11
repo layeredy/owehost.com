@@ -1,4 +1,4 @@
-# Owehost 
+# Owehost (Closure webpage)
 
 This repository contains the source code for the Owehost.com website. As Owehost has closed on January 16th, 2024; this website is simply a informational site containing informatiion about Owehost's past. 
 
